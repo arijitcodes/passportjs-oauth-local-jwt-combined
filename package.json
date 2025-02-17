@@ -6,6 +6,10 @@
     "start": "node server.js",
     "dev": "bun --watch src/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arijitcodes/passportjs-oauth-local-jwt-combined.git"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
