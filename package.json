@@ -1,9 +1,9 @@
 {
   "name": "passportjs-oauth-local-jwt-combined",
+  "version": "2.0.0",
   "module": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node src/index.js",
     "dev": "bun --watch src/index.js"
   },
   "repository": {
