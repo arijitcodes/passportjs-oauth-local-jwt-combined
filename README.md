@@ -19,17 +19,17 @@ Email: arijit.codes@gmail.com
 
 <hr>
 
-## Live Demo
+<!-- ## Live Demo
 
 For a Live Demo, check : [https://passportjs-oauth-local-jwt-combined.iamarijit.dev](https://passportjs-oauth-local-jwt-combined.iamarijit.dev)
 
-<hr>
+<hr> -->
 
 ## Functionalities and Technologies Used
 
 `Stack` : NodeJS, ExpressJS, MongoDB
 
-`Technologies Used` : NodeJS, ExpressJS, MongoDB, Mongoose, PassportJS, JSONWebToken (JWT), Dotenv, Axios, Bootstrap 5, Bootstrap Icons, Bun, etc.
+`Technologies Used` : NodeJS, ExpressJS, MongoDB, Mongoose, PassportJS, JSONWebToken (JWT), Dotenv, Axios, Bootstrap 5, Bun, etc.
 
 `Functionalities` :
 
@@ -52,30 +52,38 @@ If you have any suggestions, please feel free to leave the suggestions. Construc
 
 ## Tips
 
-<div>
-<ol>
-    <li>To setup this project, clone it and run <code>npm install</code> in the root folder.</li>
-    <li>Create a file named <code>.env</code> in the root. You can use the <code>.env.sample</code> file as a reference for the ENV Variables that are needed for the app.</li>
-    <li>Set Up the required Env Variables to be used in the app.</li>
-    <li>Run <code>npm start</code> to start the server.</li>
-</ol>
-
-OR, use Docker and Docker Compose to set up the project:
+### Using Docker and Docker Compose
 
 1. Build the Docker image:
 
    ```sh
-   docker-compose build
+   docker compose build
    ```
 
 2. Start the services:
    ```sh
-   docker-compose up
+   docker compose up
    ```
 
 Make sure to set the environment variables in your system or in a `.env` file.
 
 PS: If you go with Docker, the app will be available on port 5000.
 
-</div>
+### Without Docker
+
+1. Clone the project and run:
+
+   ```sh
+   npm install
+   ```
+
+2. Create a file named `.env` in the root. You can use the `.env.sample` file as a reference for the ENV Variables that are needed for the app.
+
+3. Set up the required Env Variables to be used in the app.
+
+4. Run:
+   ```sh
+   npm start
+   ```
+
 <hr>
