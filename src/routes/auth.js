@@ -4,6 +4,7 @@ const jwt = require("jsonwebtoken");
 const router = express.Router();
 
 const User = require("../models/User");
+const oauthProviders = require("../config/oauthProviders");
 
 // Generate JWT
 const generateJWT = (user) => {
@@ -69,15 +70,12 @@ router.get("/:provider", (req, res, next) => {
   const clientType = req.query.client_type; // 'web' or 'mobile'
 
   // Handle OAuth2 authentication
-  const scopes = {
-    google: ["profile", "email"],
-    github: ["user:email"],
-  };
-
-  console.log("Goin in Auth ----");
+  if (!oauthProviders[provider]) {
+    return res.status(400).json({ error: "Unsupported provider" });
+  }
 
   passport.authenticate(provider, {
-    scope: scopes[provider] || [],
+    scope: oauthProviders[provider].scope,
     state: clientType,
   })(req, res, next);
 });
