@@ -29,7 +29,7 @@ For a Live Demo, check : [https://passportjs-oauth-local-jwt-combined.iamarijit.
 
 `Stack` : NodeJS, ExpressJS, MongoDB, ReactJS
 
-`Technologies Used` : NodeJS, ExpressJS, MongoDB, Mongoose, PassportJS, JSONWebToken (JWT), Dotenv, Axios, Bootstrap 5, Bun, ReactJS, Material-UI, Docker, Docker Compose, etc.
+`Technologies Used` : NodeJS, ExpressJS, MongoDB, Mongoose, PassportJS, JSONWebToken (JWT), Dotenv, Axios, Bun, ReactJS, Material-UI, Docker, Docker Compose, etc.
 
 `Functionalities` :
 
