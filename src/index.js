@@ -1,6 +1,9 @@
 require("dotenv").config();
 
 const express = require("express");
+const cors = require("cors");
+
+// Express App
 const app = express();
 
 // Passport Configuration and Strategies Setup from Configurations
@@ -18,6 +21,7 @@ const profileRoute = require("./routes/profile");
 const error404Route = require("./routes/erroro404");
 
 // Middlewares
+app.use(cors());
 app.use(express.json());
 
 // Passport Middlewares
