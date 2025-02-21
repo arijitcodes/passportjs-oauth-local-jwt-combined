@@ -113,9 +113,9 @@ router.get(
       res.redirect(`http://localhost:3000/auth/callback?token=${token}`);
     } else {
       // Redirect to the mobile app with the token
-      //   res.redirect(`myapp://oauth-callback?token=${token}`);
       console.log("MOBILE APP REDIRECT");
-      res.redirect(`http://example.com?token=${token}`);
+      res.redirect(`myapp://oauth-callback?token=${token}`);
+      // res.redirect(`http://example.com?token=${token}`);
     }
   }
 );
